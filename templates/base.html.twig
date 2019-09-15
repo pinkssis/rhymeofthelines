@@ -1,0 +1,42 @@
+<html>
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>rhyme of the lines</title>
+</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+        <style>
+            body {
+                margin: 0; /* Убираем отступы */
+            }
+            .parent {
+                margin: 10%; /* Отступы вокруг элемента */
+                background: YellowGreen; /* Цвет фона */
+                padding: 10px; /* Поля вокруг текста */
+            }
+            .child {
+                border: 3px solid #666; /* Параметры рамки */
+                padding: 10px; /* Поля вокруг текста */
+                margin: 10px; /* Отступы вокруг */
+            }
+            .title {
+
+                margin: 8%; /* Отступы вокруг элемента */
+            }
+
+            .back {
+
+                background: linear-gradient(90deg, PapayaWhip, PaleTurquoise);
+
+            }
+        </style>
+    </head>
+<body class="back">
+<center class="title"><h1 style="color:YellowGreen"><font size="100">rhyme of the lines</font></h1><center>
+        {% block body %}{% endblock %}
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>

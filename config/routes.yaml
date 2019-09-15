@@ -1,0 +1,27 @@
+index:
+   path: /
+   controller: App\Controller\AppController::index
+
+create:
+   path: /create
+   controller: App\Controller\AppController:create
+
+getAll:
+   path: /getAll
+   controller: App\Controller\AppController:getAll
+
+get:
+   path: /get
+   controller: App\Controller\AppController:get
+
+update:
+   path: /update
+   controller: App\Controller\AppController:update
+
+getByPrice:
+   path: / getByPrice
+   controller: App\Controller\AppController:getByPrice
+
+read:
+   path: /read
+   controller: App\Controller\AppController::read

@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>rhyme of the lines</title>
+
+    </head>
+
+            <div class="parent">
+                <div class="child">
+                    <center>
+                        <form enctype="multipart/form-data" method="post" action="/read">
+                            <p><input type="file" name="f">
+                                <input type="submit" value="Отправить"></p>
+                        </form>
+                    </center>
+                </div>
+            </div>
+
+
+
+
+{% endblock %}
